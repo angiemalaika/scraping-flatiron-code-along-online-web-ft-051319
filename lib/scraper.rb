@@ -10,6 +10,8 @@ class Scraper
     Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
   end
 
+  #using a CSS selector to grab all of the HTML elements that contain a course.
+
   def get_courses
     self.get_page.css(".post")
   end
