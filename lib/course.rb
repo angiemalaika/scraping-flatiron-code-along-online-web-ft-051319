@@ -5,5 +5,9 @@ class Course
     def iniatialize 
       @@all << self 
     end 
+    
+    def self.all
+      @@all
+    end 
 end 
 
